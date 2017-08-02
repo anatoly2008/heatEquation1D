@@ -39,7 +39,4 @@ figure(1);
         title('1D Heat Equation'); % figure title
         set(gca, 'FontName', 'Times New Roman'); set(gca, 'TitleFontSizeMultiplier', 1.25); set(gca, 'FontSize', 15); % figure styling
         ylabel('Position on Rod'); % y axis label
-        xlabel('Time (s)'); % x axis label
-       
-%      subplot(1, 2, 2);
-%      imagesc(u'); colorbar;  %to compare with imagesc
+        xlabel('Time'); % x axis label
