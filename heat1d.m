@@ -35,7 +35,7 @@ figure(1);
         fig1 = pcolor(u'); shading interp; %colormap jet %set(gca,'Ydir','reverse'); %pcolor allows for interp shading style
         cbar = colorbar; cbar.Label.String = 'Temperature'; % display colorbar
         cbarpos = get(get(cbar,'YLabel'),'Position');
-        set(get(cbar,'YLabel'),'Position',[cbarpos(1) + 3, cbarpos(2) + 40, cbarpos(3)],'Rotation',-90, 'FontSize', 15)
+        set(get(cbar,'YLabel'),'Position',[cbarpos(1) + 3, cbarpos(2) + 40, cbarpos(3)],'Rotation',-90, 'FontSize', 15);
         title('1D Heat Equation'); % figure title
         set(gca, 'FontName', 'Times New Roman'); set(gca, 'TitleFontSizeMultiplier', 1.25); set(gca, 'FontSize', 15); % figure styling
         ylabel('Position on Rod'); % y axis label
