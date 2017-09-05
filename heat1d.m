@@ -6,7 +6,7 @@ global A b
 ode45tic = tic; % timer for entire script
 %% Constants 
 n = 100; % number of points on the rod
-c = 0.1; % thermal diffusion constant
+c = 0.05; % thermal diffusion constant
 dx = 1/n; % delta x
 omega = c/dx.^2; % just to not type out k/dx.^2 5 times
 tstop = 3; %length of simulation
@@ -49,7 +49,7 @@ fwdtic = tic; % timer for entire script
 
 %% Constants
 c = c * 1000; % diff. const. adjusted
-dt = 0.001; % time step
+dt = 0.0001; % time step
 gm = dt/((c)*(dx^2)); % a const for use in fwd euler
 
 %% Vectors
@@ -92,10 +92,8 @@ clear U;
 clear u;
 backtic = tic;
 %% Constants
-%dx = dx * 2; % pos step adjusted
-%c = c * 1000; % diff. const. adjusted
-dt = 0.001; % time step
-c = c/500;
+dt = 0.0001; % time step
+c = c*dt;
 %% Vectors
 x = 0:dx:2; % vect of steps of pos on rod
 t = 0:dt:14; % vect of steps of time
